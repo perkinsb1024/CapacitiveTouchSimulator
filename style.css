@@ -1,0 +1,35 @@
+html {
+  font-family: sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  min-width: 250px;
+  flex-grow: 100;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+#graph-container {
+  margin: 5px auto;
+  margin-bottom: 15px;
+}
+
+.touch-container {
+  display: inline-block;
+  border: 3px solid black;
+  margin: 25px;
+  margin-top: 5px;
+}
+
+.touch-simulator {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 2%,rgba(0,0,0,0.4) 80%,rgba(0,0,0,0) 110%);
+}

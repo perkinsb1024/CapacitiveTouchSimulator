@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Cap Sense Algorithm Tester</title>
+    <script src="jquery.min.js"></script> 
+    <script src="dygraph.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="column">
+        <div id="graph-container"> </div>
+      </div>
+      <div class="column">
+        <div class="cap-sense-options">
+          <div>
+            <label>
+              <input type="radio" name="growth-type" value="linear" checked>
+              Linear
+            </label>
+            <label>
+              <input type="radio" name="growth-type" value="logarithmic">
+              Logarithmic
+            </label>
+            <label>
+              <input type="radio" name="growth-type" value="exponential">
+              Exponential
+            </label>
+          </div>
+          <div>
+            Delay: <input type="number" class="delay-input" value=100 min=1 max=1000>mS
+          </div>
+          <div>
+            Points to draw: <input type="number" class="points-to-show-input" value=100 min=0 max=10000>
+          </div>
+          <div>
+            Inject noise: <input type="number" class="noise-input" value=0 min=0 max=1000>
+          </div>
+          <div>
+            <input type="button" class="start-simulator" value="Start">
+            <input type="button" class="stop-simulator" value="Stop">
+          </div>
+        </div>
+        <div id="output"></div>
+      </div>
+      <div class="column">
+        <div class="touch-container">
+          <div class="touch-simulator"></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
